@@ -1,0 +1,358 @@
+/* This style sheet was created by Joseph Pesek on 6 November, 2016 */
+
+/*Style for class myname specifies fonts */
+.myname {
+	font-family: Futura, Calibri, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+    text-shadow: .05em .04em yellow;
+	color: lightgoldenrodyellow;
+}
+
+/*Style for header */
+header {
+	border-bottom: .1em dashed lightgoldenrodyellow;
+	margin-bottom: 1%;
+}
+
+/* Style for class float left specifies float for the image */
+.float-left {
+	float: left;
+}
+
+/* Style for the image specifies the margin */
+img {
+	margin-right: 3%;
+	margin-bottom: 2%;
+	max-width: 80%;
+}
+
+/*Style for navigation unordered list */
+nav ul {
+	font-weight: bold;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+/* Style for the list in nav removes the bullets and adds styles */
+nav li {
+	list-style-type: none;
+	width: 100%;
+	background-color: lightgoldenrodyellow;
+}
+
+/* Style for container outerwrapper specifies width and margins */
+#outerwrapper {
+	background-color: navy;
+    width: 100%;
+	margin: 0 auto 0 auto;
+}
+
+/*Style for main content clears outerwrapper style */
+main {
+	clear: both;
+	background-color: lightgoldenrodyellow;
+	padding: 3%;
+	border-top: solid gold;
+	border-radius: 2em;
+	margin-bottom: 1%;
+	margin-top: 1%;
+    color: navy;
+}
+
+/*Removes bullets for unordered list in main */
+main li {
+	list-style-type: none;
+}
+
+/*Style rule for input for form elements */
+input {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+ /* Style rule for the label element */
+label {
+    display: block;
+}
+	
+/*Style for footer text*/
+footer {
+	color: lightgoldenrodyellow;
+}
+
+/*Style for footer anchor*/
+footer a {
+	color: lightgoldenrodyellow;
+}
+
+/*Style for header paragraph*/
+header p {
+	color: lightgoldenrodyellow;
+}
+
+/*Style for header anchor*/
+header a {
+	color: lightgoldenrodyellow;
+}
+
+/*Style for h3*/
+h3 {
+    font-weight: bold;
+}
+
+/*Style for mobile class */
+.mobile {
+	display: inline;
+}
+
+/*Style hides tablet class */
+.tablet {
+	display: none;
+}
+
+/*Style hides the desktop class */
+.desktop {
+	display: none;
+}
+
+/*Media query for tablet viewport with a minimum width of 481px. */
+
+@media only screen and (min-width: 481px) {
+	
+	/*Style hides mobile class */
+	.mobile {
+		display: none;
+	}
+	
+	/*Style displays tablet class */
+	.tablet {
+		display: inline;
+	}
+	
+    /* Style for the image specifies the margin */
+    img {
+        margin-right: 3%;
+        margin-bottom: 2%;
+        max-width: 50%;
+    }
+    
+    /*Style for navigation unordered list */
+    nav ul {
+        display: inline-block;
+        font-weight: bold;
+		padding-left: 1%;
+		padding-right: 1%;
+    }
+
+    /* Style for the list in nav removes the bullets and adds styles */
+    nav li {
+        list-style-type: none;
+        width: 100%;
+        background-color: beige;
+        border: .01em solid black;
+    }
+    
+	/*Style rules for pseudo classes */
+	nav li a:hover {
+		color: black;
+		font-weight: bold;
+    }
+	
+	/*Style rule for Index Nav pseudo class*/	
+	nav a:hover {
+		color: black;
+		font-weight: bold;
+	}
+	
+    /*Style for h3*/
+    h3 {
+        font-weight: bold;
+    }
+    
+    /*Style for caption element*/
+    caption {
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+    
+    /*Style for table element*/
+	table {
+		border: 0.1em solid navy;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+	}
+	
+	/*Style specifies border and padding for th and td element*/
+	th, td {
+		border: 0.1em solid navy;
+		padding: 1em;
+        background-color: lightgoldenrodyellow;
+        color: navy;
+	}
+    
+    /*Style rule for input for form elements */
+    input {
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    /* Style rule for the label element */
+    label {
+        display: block;
+    }
+}
+
+/*Media query for desktop viewport with a minimum width of 961px */
+
+@media only screen and (min-width: 961px) {
+	
+	/*Style hides mobile class */
+	.mobile {
+		display: none;
+	}
+	
+	/*Style hides tablet class */
+	.tablet {
+		display: none;
+	}
+	
+    /* Style for the image specifies the margin */
+    img {
+        margin-right: 3%;
+        margin-bottom: 2%;
+        max-width: 30%;
+    }
+    
+	/*Style displays desktop class */
+	.desktop {
+		display: inline;
+	}
+    
+    /*Style for navigation unordered list */
+    nav ul {
+        display: inline-block;
+        font-weight: bold;
+		padding-left: 1%;
+		padding-right: 1%;
+    }
+
+    /* Style for the list in nav removes the bullets and adds styles */
+    nav li {
+        list-style-type: none;
+        width: 100%;
+        background-color: beige;
+        border: .01em solid black;
+    }
+	/*Style rules for pseudo classes */
+	nav li a:hover {
+		color: black;
+		font-weight: bold;
+		}
+		
+	/*Style rule for Index Nav pseudo class*/	
+	nav a:hover {
+		color: black;
+		font-weight: bold;
+	}
+    
+    /*Style for figure image display*/
+    figure img {
+        display: inline;
+        height: 12em;
+        width: 12em;
+        opacity: 0.5;
+        border: solid black;
+    }
+    
+    /*Style to highlight image on hover through pseudo class*/
+    figure img:hover {
+        opacity: 1;
+    }
+    
+    /*Style for display and color of article element*/
+    section {
+        display: inline-flex;
+        background-color: aqua;
+        color: navy;
+        width: 25%;
+        padding: 1em;
+        margin: 1em;
+        border: solid;
+        text-align: center;
+    }
+    
+     /*Style for display and color of section element*/
+     article {
+        display: inline-block;
+        background-color: aqua;
+        color: navy;
+        width: 25%;
+        padding: 1em;
+        margin: 1em;
+        border: solid;
+        text-align: center;
+    }
+    
+    /*Style for caption element*/
+    caption {
+        font-weight: bold;
+    }
+    
+    /*Style for table element*/
+	table {
+		border: 0.1em solid navy;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+	}
+	
+	/*Style specifies border and padding for th and td element*/
+	th, td {
+		border: 0.1em solid navy;
+		padding: 1em;
+        background-color: lightgoldenrodyellow;
+        color: navy;
+	}
+	
+	/*Style for th element*/
+	th {
+		background-color: lightgray;
+		color: navy;
+	}
+	
+	/*Style for caption element*/
+	caption {
+		font-size: 2em;
+		font-weight: bold;
+		padding-bottom: 0.3em;
+	}
+    
+    /*Style rule for input for form elements */
+    input {
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    /* Style rule for the label element */
+    label {
+        display: block;
+    }
+    
+    /*Style for contact form*/
+    form {
+        border: .1em solid black;
+        padding: 1em;
+        width: 40%;
+    }
+}
